@@ -3,58 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Profile</title>
+    <title>Junying Wang's Profile</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
         }
 
-        /* Navigation bar styling */
+        /* Sidebar styling */
         nav {
             background-color: #333;
+            width: 250px;
+            height: 100vh; /* Full height */
             position: fixed;
             top: 0;
-            width: 100%;
-            padding: 1rem 0;
+            left: 0;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         nav ul {
             list-style-type: none;
-            margin: 0;
             padding: 0;
-            text-align: center;
         }
 
         nav ul li {
-            display: inline;
-            margin: 0 15px;
+            margin: 20px 0;
         }
 
         nav ul li a {
             color: white;
             text-decoration: none;
             font-size: 18px;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
         }
 
         nav ul li a:hover {
-            color: #00aaff;
+            background-color: #00aaff;
         }
 
-        /* Section styling */
+        /* Main content styling */
+        .content {
+            margin-left: 250px; /* Offset by the width of the sidebar */
+            padding: 20px;
+            flex: 1;
+        }
+
         section {
-            padding: 100px 20px;
-            margin-top: 50px;
+            margin-bottom: 50px;
         }
 
         h1, h2, h3 {
-            text-align: center;
+            text-align: left;
         }
 
         p, ul {
             text-align: left;
-            margin: 20px;
         }
 
         .subsection {
@@ -64,7 +72,7 @@
 </head>
 <body>
 
-    <!-- Navigation bar -->
+    <!-- Sidebar navigation -->
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
@@ -73,70 +81,77 @@
         </ul>
     </nav>
 
-    <!-- About Section -->
-    <section id="about">
-        <h1>About Me</h1>
-        <div class="subsection">
-            <h2>About</h2>
-            <p>Hi, I am Junying. I am a PhD candidate in Statistics at Stony Brook University under supervision by Dr. Jie Yang and Dr. Song Wu. My research interests include early phases adaptive clinical trial designs, machine learning, and deep learning. I have experience as a Research Assistant (Biostatistician) at Biostatistical Consulting Core at Stony Brook Medicine for 4 years and Data Scientist intern at Genentech for 1 year.</p>
-        </div>
-        <div class="subsection">
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming Languages: Python, R, SAS, SQL, Matlab, C/C++</li>
-                <li>Industry Knowledge: Adaptive Clinical Trial Design, Machine Learning, Deep Learning, Reinforcement Learning, Recommendation System, System Design, A/B Testing, Casual Inference, Time Series, Survival Analysis, Longitudinal Analysis, Data Manipulation, Data Structure and Algorithm</li>
-                <li>Personal Interests: Swimming, Skiing, Snowboarding, Free Diving, Badminton</li>
-            </ul>
-        </div>
-        <div class="subsection">
-            <h2>Research Interests</h2>
-            <p>My research interests focus on designing advanced early phases clinical trials to accelerate the trial process, improve the accuracy of selecting the right dose or dose combination, and stopping early if safety or futility issue occur. We recently published an R package on the R CRAN website to execute the whole process of seamless phase I/II adaptive drug combination designs based on Bayesian inference using Continual Resessment Method (CRM).</p>
-        </div>
-    </section>
+    <!-- Main content area -->
+    <div class="content">
+        <!-- About Section -->
+        <section id="about">
+            <h1>About Me</h1>
+            <div class="subsection">
+                <h2>About</h2>
+                <p>Hi, I am Junying. I am a PhD candidate in Statistics at Stony Brook University under the supervision of Dr. Jie Yang and Dr. Song Wu. My research interests include early phases adaptive clinical trial designs, machine learning, and deep learning. I have experience as a Research Assistant (Biostatistician) at Biostatistical Consulting Core at Stony Brook Medicine for 4 years and as a Data Scientist intern at Genentech for 1 year.</p>
+            </div>
+            <div class="subsection">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Programming Languages: Python, R, SAS, SQL, Matlab, C/C++</li>
+                    <li>Industry Knowledge: Adaptive Clinical Trial Design, Machine Learning, Deep Learning, Reinforcement Learning, Recommendation System, System Design, A/B Testing, Casual Inference, Time Series, Survival Analysis, Longitudinal Analysis, Data Manipulation, Data Structure and Algorithm</li>
+                    <li>Personal Interests: Swimming, Skiing, Snowboarding, Free Diving, Badminton</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h2>Research Interests</h2>
+                <p>My research interests focus on designing advanced early phase clinical trials to accelerate the trial process, improve the accuracy of selecting the right dose or dose combination, and stopping early if safety or futility issues occur. We recently published an R package on the R CRAN website to execute the whole process of seamless phase I/II adaptive drug combination designs based on Bayesian inference using the Continual Reassessment Method (CRM).</p>
+            </div>
+        </section>
 
-    <!-- Publications Section -->
-    <section id="publications">
-        <h1>Publications</h1>
-        <div class="subsection">
-            <h2>Journal Articles</h2>
-            <ul>
-                <li>Lin, K., Sunko, D.,Wang, J., Yang, J., Parsey, R. V., & DeLorenzo, C. (2024). Investigating the relationship between hippocampus/dentate gyrus volume and hypothalamus metabolism in participants with major depressive disorder. Scientific Reports, 14(1), 10622.</li>
-                <li>Wang, J.,Wu, D. D., DeLorenzo, C., & Yang, J. (2024). Examining factors related to low performance of predicting remission in participants with major depressive disorder using neuroimaging data and other clinical features. PloS one, 19(3), e0299625.</li>
-                <li>Donnelly, B. M., Hsu, D. T., Gardus, J.,Wang, J., Yang, J., Parsey, R. V., & DeLorenzo, C. (2023). Orbitofrontal and Striatal Metabolism, Volume, Thickness and Structural Connectivity in Relation to Social Anhedonia in Depression: A Multimodal Study. NeuroImage: Clinical, 103553.</li>
-                <li>Narayan, G. A., Hill, K. R., Wengler, K., He, X., Wang, J., Yang, J., & DeLorenzo, C. (2022). Does the change in glutamate to GABA ratio correlate with change in depression severity? A randomized, double-blind clinical trial. Molecular Psychiatry, 1-9.</li>
-                <li>Jones, J. S., Goldstein, S. J.,Wang, J., Gardus, J., Yang, J., Parsey, R. V., & DeLorenzo, C. (2022). Evaluation of brain structure and metabolism in currently depressed adults with a history of childhood trauma. Translational Psychiatry, 12(1), 1-9.</li>
-                <li>Liu, Y., Wang, J., Wu, S., & Yang, J. (2022). A model for isoform-level differential expression analysis using RNA-seq data without pre-specifying isoform structure. PloS one, 17(5), e0266162.</li>
-                <li>Tatarian, T., Yang, J.,Wang, J., Docimo, S., Talamini, M., Pryor, A. D., & Spaniolas, K. (2021). Trends in the utilization and perioperative outcomes of primary robotic bariatric surgery from 2015 to 2018: a study of 46,764 patients from the MBSAQIP data registry. Surgical Endoscopy, 35(7), 3915-3922.</li>
-                <li>Naeem, Z., Yang, J., Park, J.,Wang, J., Docimo, S., Pryor, A. D., & Spaniolas, K. (2020). A step in the right direction: trends over time in bariatric procedures for patients with gastroesophageal reflux disease. Obesity Surgery, 30(11), 4243-4249.</li>
-                <li>Lu, D., Song, L., Wang, X., & Wang, J. (2018). New Asymptotic Formulas and Inequalities for the Gamma Function Based on Continued Fractions. Results in Mathematics, 73(1), 1-16.</li>
-                <li>Lu, D., Song, L., & Wang, J. (2017). Some Asymptotic Formulas and Inequalities About Gamma and Psi Functions Based on Continued Fractions. Results in Mathematics, 72(1), 225-238.</li>
-            </ul>
-        </div>
-        <div class="subsection">
-            <h2>Conference Papers</h2>
-            <ul>
-                <li>Lin, k., Sunko, D., Wang, J., Yang, J., Parsey, R. V., DeLorenzo, C. Investigating The Relationship Between Hippocampus/Dentate Gyrus Volume and Hypothalamus Metabolism in Participants with Major Depressive Disorder. Poster presentation at 2024 American College of Neuropsychopharmacology. December 2023, Tampa, Florida (presented virtually).</li>
-                <li>Wang, J., Wu, D. D., DeLorenzo, C., & Yang, J. A general meta machine learning model for constructing a binary classifier using small training dataset. Poster presentation at 2023 Conference on Statistical Practice (CSP). Feb, 2023, San Francisco, CA.</li>
-                <li>Jones, J. S., Goldstein, S. J., Wang, J., Gardus, J., Yang, J., Parsey, R. V., & DeLorenzo, C. Evaluation of Brain Structure and Function in Currently Depressed Adults with a History of Childhood Trauma. Poster presentation at 2021 Neuroreceptor Mapping(NRM). Dec, 2021, Virtual.</li>
-                <li>Tatarian, T., Yang, J.,Wang, J., Docimo, S., Talamini, M., Pryor, A. D., & Spaniolas, K. Trends in the utilization and perioperative outcomes of primary robotic bariatric surgery from 2015 to 2018: a study of 46,764 patients from the MBSAQIP data registry. Oral presentation at 2020 Society of American Gastrointestinal and Endoscopic Surgeons (SAGES). Aug, 2020, Virtual.</li>
-            </ul>
-        </div>
-    </section>
+        <!-- Publications Section -->
+        <section id="publications">
+            <h1>Publications</h1>
+            <div class="subsection">
+                <h2>Journal Articles</h2>
+                <ul>
+                    <li>Lin, K., Sunko, D., Wang, J., Yang, J., Parsey, R. V., & DeLorenzo, C. (2024). Investigating the relationship between hippocampus/dentate gyrus volume and hypothalamus metabolism in participants with major depressive disorder. Scientific Reports, 14(1), 10622.</li>
+                    <li>Wang, J., Wu, D. D., DeLorenzo, C., & Yang, J. (2024). Examining factors related to low performance of predicting remission in participants with major depressive disorder using neuroimaging data and other clinical features. PloS one, 19(3), e0299625.</li>
+                    <li>Donnelly, B. M., Hsu, D. T., Gardus, J., Wang, J., Yang, J., Parsey, R. V., & DeLorenzo, C. (2023). Orbitofrontal and Striatal Metabolism, Volume, Thickness, and Structural Connectivity in Relation to Social Anhedonia in Depression: A Multimodal Study. NeuroImage: Clinical, 103553.</li>
+                    <li>Narayan, G. A., Hill, K. R., Wengler, K., He, X., Wang, J., Yang, J., & DeLorenzo, C. (2022). Does the change in glutamate to GABA ratio correlate with change in depression severity? A randomized, double-blind clinical trial. Molecular Psychiatry, 1-9.</li>
+                    <li>Jones, J. S., Goldstein, S. J., Wang, J., Gardus, J., Yang, J., Parsey, R. V., & DeLorenzo, C. (2022). Evaluation of brain structure and metabolism in currently depressed adults with a history of childhood trauma. Translational Psychiatry, 12(1), 1-9.</li>
+                    <li>Liu, Y., Wang, J., Wu, S., & Yang, J. (2022). A model for isoform-level differential expression analysis using RNA-seq data without pre-specifying isoform structure. PloS one, 17(5), e0266162.</li>
+                    <li>Tatarian, T., Yang, J., Wang, J., Docimo, S., Talamini, M., Pryor, A. D., & Spaniolas, K. (2021). Trends in the utilization and perioperative outcomes of primary robotic bariatric surgery from 2015 to 2018: a study of 46,764 patients from the MBSAQIP data registry. Surgical Endoscopy, 35(7), 3915-3922.</li>
+                    <li>Naeem, Z., Yang, J., Park, J., Wang, J., Docimo, S., Pryor, A. D., & Spaniolas, K. (2020). A step in the right direction: trends over time in bariatric procedures for patients with gastroesophageal reflux disease. Obesity Surgery, 30(11), 4243-4249.</li>
+                    <li>Lu, D., Song, L., Wang, X., & Wang, J. (2018). New Asymptotic Formulas and Inequalities for the Gamma Function Based on Continued Fractions. Results in Mathematics, 73(1), 1-16.</li>
+                    <li>Lu, D., Song, L., & Wang, J. (2017). Some Asymptotic Formulas and Inequalities About Gamma and Psi Functions Based on Continued Fractions. Results in Mathematics, 72(1), 225-238.</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h2>Conference Papers</h2>
+                <ul>
+                    <li>Lin, K., Sunko, D., Wang, J., Yang, J., Parsey, R. V., & DeLorenzo, C. Investigating the Relationship Between Hippocampus/Dentate Gyrus Volume and Hypothalamus Metabolism in Participants with Major Depressive Disorder. Poster presentation at 2024 American College of Neuropsychopharmacology. December 2023, Tampa, Florida (presented virtually).</li>
+                    <li>Wang, J., Wu, D. D., DeLorenzo, C., & Yang, J. A general meta machine learning model for constructing a binary classifier using small training datasets. Poster presentation at 2023 Conference on Statistical Practice (CSP). February 2023, San Francisco, CA.</li>
+                    <li>Jones, J. S., Goldstein, S. J., Wang, J., Gardus, J., Yang, J., Parsey, R. V., & DeLorenzo, C. Evaluation of Brain Structure and Function in Currently Depressed Adults with a History of Childhood Trauma. Poster presentation at 2021 Neuroreceptor Mapping (NRM). December 2021, Virtual.</li>
+                    <li>Tatarian, T., Yang, J., Wang, J., Docimo, S., Talamini, M., Pryor, A. D., & Spaniolas, K. Trends in the utilization and perioperative outcomes of primary robotic bariatric surgery from 2015 to 2018. Oral presentation at 2020 Society of American Gastrointestinal and Endoscopic Surgeons (SAGES) Annual Meeting. August 2020, Virtual.</li>
+                </ul>
+            </div>
+        </section>
 
-    <!-- Research & Projects Section -->
-    <section id="projects">
-        <h1>Research & Projects</h1>
-        <div class="subsection">
-            <h2>Research</h2>
-            <p></p>
-        </div>
-        <div class="subsection">
-            <h2>Projects</h2>
-            <p></p>
-        </div>
-    </section>
+        <!-- Research & Projects Section -->
+        <section id="projects">
+            <h1>Research & Projects</h1>
+            <div class="subsection">
+                <h2>Research: Dose optimization strategies for early phases clinical trials</h2>
+                <ul>
+                    <li>Executed the entire design process using R, and generated a user-friendly R package crm12Comb published on the R CRAN website for clinical researchers to simulate and implement the designs using the Bayesian framework with flexible inputs, including link functions and prior distributions, allowing adaptability for different clinical datasets.</li>
+                    <li>Explored advanced algorithms for early-phase adaptive clinical trial designs, aimed at reducing the sample size, allocating more patients to optimal drug regimens, or stopping trials early for safety or futility.</li>
+                    <li>During my data science intern at Genentech, our team developed three advanced simulation algorithms for dose optimization using R, improving dose selection efficiency and accuracy across diverse clinical scenarios. Techniques include 3+3 design, BOIN design, Emax model, logistic regression model, backfill strategies, and randomized expansion cohorts. We further deployed an R Shiny app with customized inputs, and allowed parameter adjustments to support clinical scientists with real-time, data-driven decision guidance.</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h2>Projects</h2>
+                <ul>
+                    <li>Designed a machine learning pipeline for small sample data with higher AUC compared to related studies in Psychiatry by constructing a meta model (stacking ensemble method) with specific model evaluations and variable importance ranking. We explored 5 custom and standard feature selection strategies, including pairwise correlation, most frequent variable selection, AutoEncoder, principal component analysis (PCA), etc. Moreover, to maximize the sample size utilization, we implemented Multiple Imputation through 10 iterations K-fold cross validation repeated n times to estimate performances by Rubin’s rule for small data sets.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
 
 </body>
 </html>
-
-
